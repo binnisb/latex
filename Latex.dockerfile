@@ -1,5 +1,5 @@
 FROM debian:unstable
-LABEL maintainer="Brynjar Bjarnason <binni@binnisb.com>"
+LABEL maintainer="Brynjar Smari Bjarnason <binni@binnisb.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
 
