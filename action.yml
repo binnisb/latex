@@ -1,0 +1,16 @@
+# action.yml
+name: 'pdftex'
+description: 'Build pdf from tex'
+inputs:
+  tex_file:  # id of input
+    description: 'The TeX file to compile'
+    required: true
+    default: *.tex
+outputs:
+  pdf: # id of output
+    description: 'Files compiled'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.tex_file }}
