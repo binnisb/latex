@@ -1,4 +1,4 @@
-FROM debian:unstable
+FROM ubuntu:rolling
 LABEL maintainer="Brynjar Smari Bjarnason <binni@binnisb.com>"
 
 ADD install.sh install.sh
