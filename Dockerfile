@@ -11,4 +11,4 @@ VOLUME ["/source"]
 WORKDIR /source
 CMD ["bash"]
 
-ENTRYPOINT ["pdflatex"]
+ENTRYPOINT ["latexmk"]
