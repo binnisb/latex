@@ -4,7 +4,7 @@
 set -eo pipefail
 
 # install full texlive distribution
-apt-get update && apt-get install -y texlive-full texlive-science texlive-xetex
+apt-get update && apt-get install -y texlive-full
 
 # cleanup package manager
 apt-get autoclean && apt-get clean
