@@ -5,7 +5,7 @@ inputs:
   tex_file:  # id of input
     description: 'The TeX file to compile'
     required: true
-    default: *.tex
+    default: '*.tex'
 outputs:
   pdf: # id of output
     description: 'Files compiled'
