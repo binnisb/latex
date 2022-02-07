@@ -11,4 +11,6 @@ VOLUME ["/source"]
 WORKDIR /source
 CMD ["bash"]
 
+ADD entrypoint.sh entrypoint.sh
+RUN chmod u+x entrypoint.sh 
 ENTRYPOINT ["./entrypoint.sh"]
