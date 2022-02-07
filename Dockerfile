@@ -10,7 +10,3 @@ RUN chmod u+x install.sh && bash install.sh && rm install.sh
 VOLUME ["/source"]
 WORKDIR /source
 CMD ["bash"]
-
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod u+x /entrypoint.sh 
-ENTRYPOINT ["/entrypoint.sh"]
