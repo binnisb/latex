@@ -11,6 +11,9 @@ outputs:
     description: 'Files compiled'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: ghcr.io/binnisb/latex:latest
+    credentials:
+      username: ${{ github.actor }}
+      password: ${{ secrets.CR_PAT }}
   args:
     - ${{ inputs.tex_file }}
