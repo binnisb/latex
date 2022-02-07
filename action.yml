@@ -11,6 +11,6 @@ outputs:
     description: 'Files compiled'
 runs:
   using: 'docker'
-  image: ghcr.io/binnisb/latex:latest
+  image: docker://ghcr.io/binnisb/latex:latest
   args:
     - ${{ inputs.tex_file }}
